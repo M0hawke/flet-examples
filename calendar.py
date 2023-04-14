@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import flet as ft
 
 from flet_calendar import FletCalendar
