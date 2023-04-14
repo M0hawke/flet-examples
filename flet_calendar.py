@@ -5,24 +5,11 @@ from calendar import HTMLCalendar
 from dateutil import relativedelta
 
 '''
-FletCalendar in Python.
-
-Flet does not have one so I needed to make my own
-and I thought I would share.
+FletCalendar in Python 3.
 
 Author: C. Nichols <mohawke@gmail.com>
-License: WTFPL
-    http://www.wtfpl.net
 
-Requirements: You need to install the following.
-
-pip install flet
-
-I suggest you use a Python virtual environment.
-That will keep your system Python clean and make
-it easier to manage you Flet project.
-
-https://docs.python.org/3/library/venv.html 
+Requirements: Flet
 '''
 
 class FletCalendar(ft.UserControl):
