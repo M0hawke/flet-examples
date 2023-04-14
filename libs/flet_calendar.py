@@ -5,7 +5,7 @@ from calendar import HTMLCalendar
 from dateutil import relativedelta
 
 '''
-FletCalendar in Python 3.
+FletCalendar in Python for Flet.
 
 Author: C. Nichols <mohawke@gmail.com>
 
@@ -159,19 +159,3 @@ class FletCalendar(ft.UserControl):
         self.page.dialog = self.dlg_modal
         self.dlg_modal.open = True
         self.page.update()
-'''               
-def main(page: ft.Page):    
-    
-    page.theme = ft.theme.Theme(color_scheme_seed=ft.colors.PINK)
-    page.dark_theme = ft.theme.Theme(color_scheme_seed=ft.colors.PINK) 
-
-    # Instantiate the FletCalendar class.
-    mycal = FletCalendar(page)
-    
-    # Add to our application.
-    page.add(mycal, mycal.output)
-
-    page.update()
-    
-ft.app(target=main)
-'''

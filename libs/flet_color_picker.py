@@ -2,7 +2,7 @@ import flet as ft
 import matplotlib
 
 '''
-FletCalendar in Python.
+FletColorPicker in Python for Flet.
 
 Author: C. Nichols <mohawke@gmail.com>
 
@@ -93,21 +93,3 @@ class ColorPicker(ft.UserControl):
         self.page.dialog = self.dlg_modal
         self.dlg_modal.open = True
         self.page.update()
-
-"""
-Usage:
-
-    import controls.color_picker
-    
-    # Instantiate the color picker.
-    swatch = ft.Container(bgcolor=ft.colors.BLACK, width=100, height=23, border = ft.border.all(1, ft.colors.BLACK), border_radius=ft.border_radius.all(15))
-    my_color_picker = ColorPicker(page, swatch)
-    
-    # Add to page
-    main_controls = [
-        ft.Container(ft.Text("Pick A Color")),
-        ft.ElevatedButton("Select Color", icon=ft.icons.COLORIZE, on_click=my_color_picker.open_dlg_modal),
-        my_color_picker.output_control
-    ]
-
-"""
