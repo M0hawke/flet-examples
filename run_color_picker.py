@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import flet as ft
 
-from flet_color_picker import ColorPicker
+from libs.flet_color_picker import ColorPicker
 
 DESKTOP  = True
 WEB_PORT = 8000

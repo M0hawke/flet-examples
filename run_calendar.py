@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import flet as ft
 
-from flet_calendar import FletCalendar
+from libs.flet_calendar import FletCalendar
 
 DESKTOP  = True
 WEB_PORT = 8000
