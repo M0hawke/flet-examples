@@ -16,7 +16,7 @@ class HashTags(ft.UserControl):
         self.page = page
         self.tags = ft.TextField(label="Add hashtags", counter_text="Tag Count: 0", on_submit=self.add_tag, 
                         on_change=self.clear_help, border=ft.InputBorder.UNDERLINE, filled=True,
-                        helper_style={'color':ft.colors.RED}, counter_style={'color':ft.colors.GREEN}) 
+                        helper_style={'color':ft.colors.RED}, counter_style={'color':ft.colors.PINK_50}) 
         self.tag_list = ft.Row(spacing=6, auto_scroll=True)
         self.build()
         
