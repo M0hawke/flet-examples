@@ -35,7 +35,9 @@ def main(page: ft.Page):
                 pointer.rotate.angle = math.radians(abs(curr_degree - 360))
         else:
             pointer.rotate.angle = math.radians(curr_degree - 360)
-    
+            
+        display.value = current_value
+        
         page.update()
           
     # Add gauge needle image. This is the only animation.  
@@ -56,13 +58,17 @@ def main(page: ft.Page):
         src=f"/gauge/percent_gauge_cap.png",
         fit=ft.ImageFit.CONTAIN,
     )
+    
+    display = ft.Text("0", color=ft.colors.BLACK, size=25)
+    value_disp = ft.Container(content=display, width=350, height=350, alignment=ft.alignment.center)
 
     # Stack the images to layer the gauge components.
     gauge_stack = ft.Stack(
         [
             gauge_bg,
             pointer,
-            gauge_cap
+            gauge_cap,
+            value_disp
         ],
         width=350,
         height=350,
