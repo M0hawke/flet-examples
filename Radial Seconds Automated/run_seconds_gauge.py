@@ -2,7 +2,6 @@
 import flet as ft
 import math
 import time
-import random
 
 '''
 Simple radial gauge in Python and Flet.
@@ -26,7 +25,7 @@ def main(page: ft.Page):
         '''
         Take a value from a text control and update the gauge.
         '''
-        some_times = [30, 35, 28, 18, 60, 53, 7, 0]
+        some_times = [30, 35.3, 28, 18.4, 60, 53, 7.8, 0]
         
         for current_value in some_times:
             if current_value > 0: 
@@ -35,7 +34,7 @@ def main(page: ft.Page):
                 curr_degree = int(360 / 60) * current_value
                 pointer_value = math.radians(pointer.rotate.angle)
                 
-                if (current_value == 60):
+                if current_value == 60:
                     pointer.rotate.angle = math.radians(360)
                     
                 if pointer_value < 0:
