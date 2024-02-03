@@ -14,7 +14,7 @@ MPCOLORS = matplotlib.colors.cnames
 
 class ColorPicker(ft.UserControl):
     
-    def __init__(self, page, output_control):
+    def __init__(self, page: ft.Page, output_control):
         super().__init__()
         
         self.MPColors = MPCOLORS 
