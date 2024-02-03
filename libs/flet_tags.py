@@ -10,7 +10,7 @@ Requirements: You need to install Flet.
 
 class HashTags(ft.UserControl):
     
-    def __init__(self, page):
+    def __init__(self, page: ft.Page):
         super().__init__()
         
         self.page = page
